@@ -13,21 +13,27 @@ html
             blockquote
                 h2 User stories :
                 p 1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string
-                p 2) I can paginate through the responses by adding a ?offset=2 parameter to the URL 
+                p 
+                    del 2) I can paginate through the responses by adding a ?offset=2 parameter to the URL 
+                    i it turns out the Imgur API does not seem to have an offset query parameter
                 p 3) I can get a list of the most recently submitted search strings
-                    
+            br
+            div(class='row')
+                div(class='col-lg-6')
+                    div(class='input-group')
+            
             h2 Example :
             p I can search for images of grumpy cat:
-            code  https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/grumpy%20cat?offset=10
+            code  https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/grumpy%20cat
             br
             br
-            p and the app will return a JSON array of images of gumpy cat
+            p and the app will return a JSON array of images of grumpy cat
             br
             p when I log onto :
             code https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/
             br
             br
-            p I can browse through previous queries which have been saved in the database
+            p I can browse through previous queries which have been saved in the MongoDB database on mlab.com
             br
             br
-            p the databse is on mlab and the images come from Imgur API
+            p Note : the databse is deployed on MongoDB DBAAS app mlab, and the images are pulled from Imgur's API
