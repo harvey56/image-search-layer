@@ -94,7 +94,7 @@ app.use("/api/latest/imagesearch", function(req, res){
    console.log("I render the 10 latest entries to the database");
    ImageLayerRecord.find({}, function(err, data){
        res.send(data);
-   }).limit(10);
+   }).sort({_id:-1}).limit(10);
 });
 
 
