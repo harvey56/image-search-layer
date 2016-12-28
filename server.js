@@ -53,7 +53,6 @@ app.use("/api/imagesearch/", function(req, res){
     };
     
     https.get(options, function(response){
-        
         var d = '';
         var parsed = '';
         var r = [];
