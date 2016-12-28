@@ -5,5 +5,5 @@ App that allows to pull images from Imgur's API, and display the list of images 
 
 More details and examples are available on the homepage of the API :
 
-https://cryptic-ridge-9197.herokuapp.com/
+https://image-search-layer-56.herokuapp.com/
 
